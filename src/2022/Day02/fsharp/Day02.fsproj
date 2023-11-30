@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\shared\dotnet\Util\Util.fsproj" />
+    <ProjectReference Include="..\..\..\..\shared\dotnet\Util\Util.fsproj" />
   </ItemGroup>
 
 </Project>

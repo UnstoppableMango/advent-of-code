@@ -1,6 +1,6 @@
 ﻿open System
 open System.IO
-open Shared
+open Util
 
 type GameResult =
     | Win

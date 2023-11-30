@@ -1,4 +1,4 @@
-﻿namespace Shared
+﻿namespace Util
 
 module xString =
     let split (s: char) (x: string) = x.Split s

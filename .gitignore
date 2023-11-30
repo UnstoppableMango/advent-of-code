@@ -8,3 +8,7 @@ node_modules/
 # Problem input
 input.*
 test.*
+
+# IDE Settings
+aws.xml
+discord.xml

@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "csharp", "csharp", "{BA6BDA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day1", "Day01\csharp\Day1.csproj", "{4C4B37D1-5685-4ABE-9480-8843E7B0CAE8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{526FF7FC-A67A-4344-B88E-1F7D22C3BCE3}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Util", "..\..\shared\dotnet\Util\Util.fsproj", "{623B2A6B-32AD-41D3-A696-3A841436EEA8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,8 +24,13 @@ Global
 		{4C4B37D1-5685-4ABE-9480-8843E7B0CAE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C4B37D1-5685-4ABE-9480-8843E7B0CAE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C4B37D1-5685-4ABE-9480-8843E7B0CAE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{623B2A6B-32AD-41D3-A696-3A841436EEA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{623B2A6B-32AD-41D3-A696-3A841436EEA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{623B2A6B-32AD-41D3-A696-3A841436EEA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{623B2A6B-32AD-41D3-A696-3A841436EEA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4C4B37D1-5685-4ABE-9480-8843E7B0CAE8} = {BA6BDA70-83FE-4D91-A4B1-09FF65B17E7D}
+		{623B2A6B-32AD-41D3-A696-3A841436EEA8} = {526FF7FC-A67A-4344-B88E-1F7D22C3BCE3}
 	EndGlobalSection
 EndGlobal

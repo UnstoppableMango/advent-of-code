@@ -1,0 +1,10 @@
+# Artifacts
+bin/
+obj/
+
+# Packages
+node_modules/
+
+# Problem input
+input.*
+test.*

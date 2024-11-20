@@ -1,6 +1,7 @@
 # Artifacts
 bin/
 obj/
+.make/
 
 # Packages
 node_modules/
@@ -12,3 +13,6 @@ test.*
 # IDE Settings
 aws.xml
 discord.xml
+
+# User Settings
+.envrc

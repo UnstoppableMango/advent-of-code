@@ -29,10 +29,17 @@ bin/dotnet: global.json | bin/dotnet-install.sh
 bin/devops: .versions/devops
 	GOBIN=${LOCALBIN} go install github.com/unmango/go/cmd/devops@v$(shell cat $<)
 
+bin/aoc:
+	cargo install --root ${WORKING_DIR} aoc-cli
+
 .envrc: hack/example.envrc
 	cp $< $@
 
-src/%: | hack/init-year.sh
+src/%.fsproj: | bin/dotnet
+	dotnet new console -lang F# --output $(dir $@) --name $(basename $(notdir $@))
+	dotnet sln add $@ --solution-folder $(word 2,$(subst /, ,$@))/fsharp
+
+.make/init/%: | hack/init-year.sh
 	YEAR=$? hack/init-year.sh
 
 .make/dotnet_build: $(shell $(DEVOPS) list --dotnet) | bin/devops bin/dotnet

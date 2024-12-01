@@ -32,6 +32,9 @@ bin/devops: .versions/devops
 .envrc: hack/example.envrc
 	cp $< $@
 
+src/%: | hack/init-year.sh
+	YEAR=$? hack/init-year.sh
+
 .make/dotnet_build: $(shell $(DEVOPS) list --dotnet) | bin/devops bin/dotnet
 	$(DOTNET) build
 	@touch $@

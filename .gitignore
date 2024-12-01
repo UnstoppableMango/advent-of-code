@@ -7,7 +7,7 @@ obj/
 node_modules/
 
 # Problem input
-input.*
+input*
 test.*
 
 # IDE Settings
@@ -16,5 +16,6 @@ discord.xml
 
 # User Settings
 .envrc
+*.user
 
 .direnv/

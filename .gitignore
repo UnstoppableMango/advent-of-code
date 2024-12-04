@@ -19,3 +19,5 @@ discord.xml
 *.user
 
 .direnv/
+# Garbage
+.DS_Store

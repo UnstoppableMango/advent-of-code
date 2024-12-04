@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+	  <None Include="input" CopyToOutputDirectory="Always" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

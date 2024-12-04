@@ -17,3 +17,6 @@ discord.xml
 # User Settings
 .envrc
 *.user
+
+# Garbage
+.DS_Store

@@ -30,7 +30,7 @@ bin/devops: .versions/devops
 	GOBIN=${LOCALBIN} go install github.com/unmango/go/cmd/devops@v$(shell cat $<)
 
 bin/aoc:
-	cargo install --root ${WORKING_DIR} aoc-cli
+	cargo install --root ${WORKING_DIR} --no-track aoc-cli
 
 .envrc: hack/example.envrc
 	cp $< $@

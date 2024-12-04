@@ -8,3 +8,6 @@ indent_style = tab
 
 [*.cs]
 indent_size = 4
+
+[*.fs]
+indent_style = space

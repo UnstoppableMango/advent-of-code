@@ -1,13 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net9.0</TargetFramework>
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net9.0</TargetFramework>
+	</PropertyGroup>
 
-  <ItemGroup>
-	  <None Include="input" CopyToOutputDirectory="Always" />
-    <Compile Include="Program.fs" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="input" CopyToOutputDirectory="Always"/>
+		<None Include="testinput" CopyToOutputDirectory="Always"/>
+		<Compile Include="Program.fs"/>
+	</ItemGroup>
 
 </Project>

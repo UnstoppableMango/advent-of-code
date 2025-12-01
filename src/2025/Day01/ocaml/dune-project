@@ -1,0 +1,23 @@
+(lang dune 3.20)
+
+(name day01)
+
+(generate_opam_files true)
+
+(source
+ (github UnstoppableMango/advent-of-code))
+
+(authors "Erik Rasmussen <erik.rasmussen@unmango.dev>")
+(maintainers "Erik Rasmussen <erik.rasmussen@unmango.dev>")
+
+(license MIT)
+
+(documentation https://github.com/UnstoppableMango/advent-of-code)
+
+(package
+ (name day01)
+ (synopsis "Advent of Code 2025 Day 01")
+ (description "Advent of Code 2025 Day 01 solution in OCaml")
+ (depends ocaml)
+ (tags
+  ("ocaml" "aoc" "advent-of-code" "2025" "day01")))

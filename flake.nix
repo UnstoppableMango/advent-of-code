@@ -29,11 +29,15 @@
             buildInputs = with pkgs; [
               cargo
               dotnetCorePackages.sdk_10_0
+              ghc
+              ghcid
               git
               gnumake
+              go
               nixfmt-rfc-style
               nil
-							opam
+              nodejs_24
+              opam
               rustc
             ];
           };

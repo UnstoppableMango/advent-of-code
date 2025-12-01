@@ -2,8 +2,7 @@
 set -eum
 
 root="$(git rev-parse --show-toplevel)"
-# year="$(date '+%Y')"
-year=2022
+year="${YEAR:-$(date '+%Y')}"
 langs=(
 	fsharp
 	csharp

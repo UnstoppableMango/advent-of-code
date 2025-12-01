@@ -2,9 +2,13 @@
 bin/
 obj/
 .make/
+_opam/
+!**/ocaml/bin/
+_build/
 
 # Packages
 node_modules/
+.direnv/
 
 # Problem input
 input*
@@ -18,6 +22,5 @@ discord.xml
 .envrc
 *.user
 
-.direnv/
 # Garbage
 .DS_Store

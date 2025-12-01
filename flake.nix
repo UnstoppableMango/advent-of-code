@@ -27,8 +27,10 @@
         {
           devShells.default = pkgs.mkShell {
             buildInputs = with pkgs; [
+              aoc-cli
               cargo
               dotnetCorePackages.sdk_10_0
+              dune_3
               ghc
               ghcid
               git
@@ -44,6 +46,7 @@
 
           treefmt = {
             programs.nixfmt.enable = true;
+            programs.ocamlformat.enable = true;
           };
         };
     };

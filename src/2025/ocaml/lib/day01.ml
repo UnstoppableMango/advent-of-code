@@ -29,7 +29,7 @@ let p2 () =
   |> Seq.scan ( + ) 50 |> Seq.map c1 |> Seq.fold_left ( + ) 0 |> string_of_int
   |> print_endline
 
-let () =
+let day01 () =
   let () = p1 () in
   let () = p2 () in
   ()

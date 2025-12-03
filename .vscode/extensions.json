@@ -13,8 +13,6 @@
         "mogeko.haskell-extension-pack",
         "ocamllabs.ocaml-platform",
         "julialang.language-julia",
-        "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode",
         "jakebecker.elixir-ls",
         "scala-lang.scala",
         "vscjava.vscode-java-pack"

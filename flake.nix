@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    systems.url = "github:UnstoppableMango/nix-systems";
     flake-parts.url = "github:hercules-ci/flake-parts";
 
     opam-nix = {
@@ -19,14 +20,13 @@
   outputs =
     inputs@{ flake-parts, ... }:
     flake-parts.lib.mkFlake { inherit inputs; } {
-      imports = [ inputs.treefmt-nix.flakeModule ];
+      systems = import inputs.systems;
 
-      systems = [
-        "x86_64-linux"
-        "aarch64-linux"
-        "x86_64-darwin"
-        "aarch64-darwin"
+      imports = with inputs; [
+        systems.flakeModule
+        treefmt-nix.flakeModule
       ];
+
       perSystem =
         { pkgs, ... }:
         {
@@ -41,7 +41,7 @@
               git
               gnumake
               go
-              nixfmt-rfc-style
+              nixfmt
               nil
               nodejs_24
               opam

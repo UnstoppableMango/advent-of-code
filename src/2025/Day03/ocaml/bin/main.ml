@@ -16,16 +16,7 @@ let p1 bank =
 
 let p2 bank =
   let () = Printf.printf "bank: %s\n" (String.of_seq bank) in
-  bank
-  |> Seq.mapi (fun i a ->
-      bank
-      |> Seq.drop (i + 1)
-      |> Seq.map (fun b ->
-          (* let () =
-            Printf.printf "%s; " ([ a; b ] |> List.to_seq |> String.of_seq)
-          in *)
-          [ a; b ] |> to_string |> int_of_string))
-  |> Seq.flat_map Fun.id |> Seq.fold_left Int.max 0
+  bank |> Fun.id |> Seq.fold_left Int.max 0
 
 let p best input =
   input |> List.map String.to_seq |> List.map best |> fun x ->

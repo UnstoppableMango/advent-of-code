@@ -41,6 +41,7 @@
               git
               gnumake
               go
+              jq
               nixfmt
               nil
               nodejs_24

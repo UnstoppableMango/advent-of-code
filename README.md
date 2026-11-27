@@ -8,6 +8,8 @@ Not all days have a solution for every language, I've tried to keep the `README`
 
 Most days have solutions in F#.
 
+AI tools never help solve puzzles here; they only help with the development environment. See [AGENTS.md](./AGENTS.md) for the rules.
+
 ## Building
 
 For F#/C# you can run `dotnet build` at the root of the repository.
